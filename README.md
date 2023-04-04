@@ -17,6 +17,8 @@ may be better to use the (Official NXP instructions?)[https://community.nxp.com/
 
 Alternative notes of (Variscite imx6 build script with patches)[https://github.com/varigit/debian-var/blob/debian_jessie_mx6ul_var01/make_var_mx6ul_dart_debian.sh] 
 
+Subset, focus on (console rootfs subvariant)[https://github.com/varigit/debian-var/blob/debian_bullseye_var01/variscite/console_rootfs.sh] 
+
 
 * obtain uboot 
 * add uboot patches with device trees and kcofnigs, that have configuration for DDR ram, pinmuxes, boot devices etc 
