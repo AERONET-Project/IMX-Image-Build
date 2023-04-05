@@ -18,7 +18,7 @@ mkdir out
 #Aight toolchain get 
 #now on to das U-boot 
 
-cd ~/
+
 wget -c https://github.com/u-boot/u-boot/archive/refs/tags/v2023.04.tar.gz 
 mkdir u-boot-imx
 tar jxvf v2023.04.tar.gz -C uboot-imx/ --strip-components 1 
@@ -32,7 +32,7 @@ make
 #bwoop bwoop das boot is ready 
 
 #get KFC out cause it's kernel time 
-cd ~/ 
+cd ..
 wget -c https://github.com/nxp-imx/linux-imx/archive/refs/tags/rel_imx_5.4.24_2.1.4.tar.gz 
 mkdir linux-imx
 tar jxvf rel_imx_5.4.24_2.1.4.tar.gz  -C linux-imx/ --strip-components 1 
@@ -43,7 +43,7 @@ make imx_v7_defconfig -j'nproc'
 make zImage dtbs -j'nproc'
 
 #movign uboot, kernel and dtb to folder 
-cd ~/
+cd ..
 sudo cp uboot-imx/u-boot.imx  out/
 sudo cp linux-imx/arch/arm/boot/zImage  out/
 sudo cp linux-imx/arch/arm/boot/dts/imx6ull-14x14-evk.dtb  out/
