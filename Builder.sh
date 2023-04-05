@@ -26,7 +26,7 @@ cd u-boot-imx
 #Pause for copying over patches and other stuff to config uboot for specific configuration of hardware 
 # specifically pinmuxes, patches to mmc boot location and other stuff 
 #copy over new defconfig (not yet generated) 
-make mx6ulz_14x14_evk_defconfig -j'nproc' 
+make mx6ulz_14x14_evk_defconfig -j$(nproc) 
 #make mx6ulz_ANT_Alpha_defconfig 
 make 
 #bwoop bwoop das boot is ready 
@@ -38,9 +38,9 @@ mkdir linux-imx
 tar -xf rel_imx_5.4.24_2.1.4.tar.gz  -C linux-imx/ --strip-components 1 
 cd linux-imx 
 # pause to copy over all the stuff for device trees and other modifications to match hardware of choice. 
-make imx_v7_defconfig -j'nproc'
+make imx_v7_defconfig -j$(nproc) 
 #make dtbs 
-make zImage dtbs -j'nproc'
+make zImage dtbs -j$(nproc) 
 
 #movign uboot, kernel and dtb to folder 
 cd ..
