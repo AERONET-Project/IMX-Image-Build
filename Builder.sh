@@ -21,7 +21,7 @@ mkdir out
 
 wget -c https://github.com/u-boot/u-boot/archive/refs/tags/v2023.04.tar.gz 
 mkdir u-boot-imx
-tar -xf v2023.04.tar.gz -C uboot-imx/ --strip-components 1 
+tar -xf v2023.04.tar.gz -C u-boot-imx/ --strip-components 1 
 cd u-boot-imx
 #Pause for copying over patches and other stuff to config uboot for specific configuration of hardware 
 # specifically pinmuxes, patches to mmc boot location and other stuff 
