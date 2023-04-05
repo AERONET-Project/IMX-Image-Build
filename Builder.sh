@@ -44,7 +44,9 @@ make zImage dtbs -j$(nproc)
 
 #movign uboot, kernel and dtb to folder 
 cd ..
-sudo cp uboot-imx/u-boot.imx  out/
+#note one of these has the dtb integrated? 
+sudo cp uboot-imx/u-boot.imx out/
+sudo cp uboot-imx/u-boot-dtb.imx  out/
 sudo cp linux-imx/arch/arm/boot/zImage  out/
 sudo cp linux-imx/arch/arm/boot/dts/imx6ull-14x14-evk.dtb  out/
 
