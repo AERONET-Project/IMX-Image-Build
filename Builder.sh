@@ -21,7 +21,7 @@ mkdir out
 
 wget -c https://github.com/u-boot/u-boot/archive/refs/tags/v2023.04.tar.gz 
 mkdir u-boot-imx
-tar jxvf v2023.04.tar.gz -C uboot-imx/ --strip-components 1 
+tar -xf v2023.04.tar.gz -C uboot-imx/ --strip-components 1 
 cd u-boot-imx
 #Pause for copying over patches and other stuff to config uboot for specific configuration of hardware 
 # specifically pinmuxes, patches to mmc boot location and other stuff 
@@ -35,7 +35,7 @@ make
 cd ..
 wget -c https://github.com/nxp-imx/linux-imx/archive/refs/tags/rel_imx_5.4.24_2.1.4.tar.gz 
 mkdir linux-imx
-tar jxvf rel_imx_5.4.24_2.1.4.tar.gz  -C linux-imx/ --strip-components 1 
+tar -xf rel_imx_5.4.24_2.1.4.tar.gz  -C linux-imx/ --strip-components 1 
 cd linux-imx 
 # pause to copy over all the stuff for device trees and other modifications to match hardware of choice. 
 make imx_v7_defconfig -j'nproc'
