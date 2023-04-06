@@ -19,6 +19,8 @@ Alternative notes of (Variscite imx6 build script with patches)[https://github.c
 
 Subset, focus on (console rootfs subvariant)[https://github.com/varigit/debian-var/blob/debian_bullseye_var01/variscite/console_rootfs.sh] 
 
+derivation of process from Robert C Nelson's (EEWiki)[https://forum.digikey.com/t/debian-getting-started-with-the-npi-i-mx6ull/12710]
+
 
 * obtain uboot 
 * add uboot patches with device trees and kcofnigs, that have configuration for DDR ram, pinmuxes, boot devices etc 
