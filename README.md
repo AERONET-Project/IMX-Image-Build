@@ -21,6 +21,9 @@ Subset, focus on (console rootfs subvariant)[https://github.com/varigit/debian-v
 
 derivation of process from Robert C Nelson's (EEWiki)[https://forum.digikey.com/t/debian-getting-started-with-the-npi-i-mx6ull/12710]
 
+Note further methods of compiling kernel from (this link, it has specific instructions to install modules via a make)[https://uthings.uniud.it/building-mainline-u-boot-and-linux-kernel-for-orange-pi-boards]
+
+
 
 * obtain uboot 
 * add uboot patches with device trees and kcofnigs, that have configuration for DDR ram, pinmuxes, boot devices etc 
