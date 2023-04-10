@@ -23,6 +23,9 @@ derivation of process from Robert C Nelson's [EEWiki](https://forum.digikey.com/
 
 Note further methods of compiling kernel from [this link, it has specific instructions to install modules via a make](https://uthings.uniud.it/building-mainline-u-boot-and-linux-kernel-for-orange-pi-boards)
 
+Another good resouce is the [Variscite wiki on building debian for their board](https://variwiki.com/index.php?title=Debian_Build_Release&release=RELEASE_BULLSEYE_V1.0_DART-6UL)
+
+Icing on the cake is the [porting u-boot to a new custom board guide](https://pcbartists.com/firmware/imx6-firmware/steps-to-port-uboot-custom-imx6-board/)
 
 * obtain uboot 
 * add uboot patches with device trees and kcofnigs, that have configuration for DDR ram, pinmuxes, boot devices etc 
